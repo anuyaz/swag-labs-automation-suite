@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/qa/OOPConcepts/src/test/java/Checkout/CheckoutOverviewTest.java">
+        <classes>
+            <class name="Checkout.CheckoutOverviewTest">
+                <methods>
+                    <include name="checkTotal"/>
+                    <include name="finishButtonNavigateToCompletePage"/>
+                    <include name="cancelButtonNavigateToInventoryPage"/>
+                    <include name="cancelNotRemoveCartItem"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/qa/OOPConcepts/src/test/java/Inventory/CartTest.java">
+        <classes>
+            <class name="Inventory.CartTest">
+                <methods>
+                    <include name="isContinueButtonNavogateToInventoryPage"/>
+                    <include name="isCheckoutNavigateToPersonalDetailPage"/>
+                    <include name="continueWithMissingFistName"/>
+                    <include name="continueWithMissingLastName"/>
+                    <include name="continueWithMissingZipCode"/>
+                    <include name="enterCorrectPersonalDetails"/>
+                    <include name="cancelButtonNavigateToCartPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/qa/OOPConcepts/src/test/java/Inventory/InventoryTest.java">
+        <classes>
+            <class name="Inventory.InventoryTest">
+                <methods>
+                    <include name="numberOfInventoriesPerPage"/>
+                    <include name="isVisibleAllItemImages"/>
+                    <include name="isVisibleAllItemDetails"/>
+                    <include name="isImageClickNavigateToDetailPage"/>
+                    <include name="isTitleClickNavigateToDetailPage"/>
+                    <include name="isButtonNameChangeAfterAddToCart"/>
+                    <include name="isCartNavigateToCartPage"/>
+                    <include name="isCorrectInventoryInCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="C:/qa/OOPConcepts/src/test/java/login/LoginTest.java">
+        <classes>
+            <class name="login.LoginTest">
+                <methods>
+                    <include name="loginSuccess"/>
+                    <include name="incorrectLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
